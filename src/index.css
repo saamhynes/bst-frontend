@@ -1,13 +1,80 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form and Input Enhancements */
+form {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 500px;;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Rounded corners for input fields */
+}
+
+/* Button Enhancements */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #7651db; /* A more vibrant button color */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners for buttons */
+  transition: background-color 0.3s ease; /* Smooth transition for button hover */
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* List and Items */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  background-color: #e9ecef;
+  padding: 10px;
+  border-radius: 5px; /* Rounded corners for list items */
+}
+
+/* Additional Styles for Interactivity */
+button:focus,
+input:focus {
+  outline: none; /* Removes the default focus outline */
+  border-color: #80bdff; /* Adds a subtle border color on focus */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Adds a glow effect on focus */
 }
