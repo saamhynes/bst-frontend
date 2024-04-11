@@ -15,7 +15,7 @@ const transformTreeData = (dto) => {
 
 const EnterNumbers = () => {
   const [numbers, setNumbers] = useState('');
-  const [treeData, setTreeData] = useState(null); // Reintroduce treeData state
+  const [treeData, setTreeData] = useState(null); 
   const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
@@ -31,7 +31,7 @@ const EnterNumbers = () => {
         }
       );
       const transformedData = transformTreeData(response.data);
-      setTreeData(transformedData); // Use setTreeData to update the state
+      setTreeData(transformedData); 
     } catch (error) {
       console.error('Error:', error);
     }
@@ -49,7 +49,7 @@ const EnterNumbers = () => {
         />
         <button type="submit">Submit</button>
       </form>
-      {/* Conditionally render TreeVisualization if treeData is available */}
+      
       {treeData && <TreeVisualization data={treeData} />}
       <button onClick={() => navigate('/prev-trees')} style={{ marginTop: '20px' }}>
         Show Previous Trees
